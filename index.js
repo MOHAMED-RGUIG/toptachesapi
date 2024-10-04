@@ -17,7 +17,9 @@ import sendEmailRoutes from './src/routes/sendemail.js';
 
 const app = express();
 
-app.use(cors({ origin: '*' }));
+ origin:["https://topclassgestiontaches.app.genez.io/"],
+    methods:["POST","GET"],
+    credentials:true}));
 app.use(bodyParser.json());
 
 // Use the auth routes
